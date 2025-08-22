@@ -1,0 +1,66 @@
+{
+  "name": "mannu24/gmc-integration",
+  "description": "A comprehensive Laravel package for Google Merchant Center integration with product synchronization, batch processing, and automatic sync management.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "google-merchant-center",
+    "gmc",
+    "ecommerce",
+    "product-sync",
+    "google-shopping",
+    "merchant-center",
+    "laravel-package"
+  ],
+  "authors": [
+    {
+      "name": "Mannu24",
+      "email": "contact@example.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/mannu24/google-merchant-center",
+  "support": {
+    "issues": "https://github.com/mannu24/google-merchant-center/issues",
+    "source": "https://github.com/mannu24/google-merchant-center"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Mannu24\\GMCIntegration\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mannu24\\GMCIntegration\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.0|^8.1|^8.2|^8.3",
+    "google/apiclient": "^2.15",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+    "illuminate/database": "^8.0|^9.0|^10.0|^11.0|^12.0",
+    "illuminate/console": "^8.0|^9.0|^10.0|^11.0|^12.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0|^10.0|^11.0",
+    "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mannu24\\GMCIntegration\\Providers\\GMCServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  }
+}
