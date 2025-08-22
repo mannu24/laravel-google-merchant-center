@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2024-12-19
+
+### Fixed
+- **Critical**: Fixed namespace inconsistency across all source files
+- Updated all classes to use `Mannu24\GoogleMerchantCenter` namespace
+- Renamed service provider from `GMCServiceProvider` to `GoogleMerchantCenterServiceProvider`
+- Fixed autoloading issues and PSR-4 compliance
+- Updated all import statements and class references
+
 ## [1.0.0] - 2024-12-19
 
 ### Added
@@ -15,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GMCRepository for data persistence operations
 - SyncsWithGMC trait for easy model integration
 - SyncAllProductsCommand for console-based synchronization
-- GMCServiceProvider for Laravel service registration
+- GoogleMerchantCenterServiceProvider for Laravel service registration
 - Comprehensive configuration file (config/gmc.php)
 - Database migrations for GMC products, fields, and sync logs
 - Unit tests with PHPUnit
