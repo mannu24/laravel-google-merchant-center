@@ -1,6 +1,7 @@
 {
   "name": "mannu24/google-merchant-center",
   "description": "A comprehensive Laravel package for Google Merchant Center integration with product synchronization, batch processing, and automatic sync management.",
+  "version": "1.0.0",
   "type": "library",
   "license": "MIT",
   "keywords": [
