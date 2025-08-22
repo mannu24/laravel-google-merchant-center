@@ -1,13 +1,13 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Providers;
+namespace Mannu24\GoogleMerchantCenter\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Mannu24\GMCIntegration\Repositories\GMCRepository;
-use Mannu24\GMCIntegration\Repositories\Interfaces\GMCRepositoryInterface;
-use Mannu24\GMCIntegration\Services\GMCService;
+use Mannu24\GoogleMerchantCenter\Repositories\GMCRepository;
+use Mannu24\GoogleMerchantCenter\Repositories\Interfaces\GMCRepositoryInterface;
+use Mannu24\GoogleMerchantCenter\Services\GMCService;
 
-class GMCServiceProvider extends ServiceProvider
+class GoogleMerchantCenterServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
@@ -35,7 +35,7 @@ class GMCServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Mannu24\GMCIntegration\Console\Commands\SyncAllProductsCommand::class,
+                \Mannu24\GoogleMerchantCenter\Console\Commands\SyncAllProductsCommand::class,
             ]);
         }
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Tests;
+namespace Mannu24\GoogleMerchantCenter\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Mannu24\GMCIntegration\Providers\GMCServiceProvider;
+use Mannu24\GoogleMerchantCenter\Providers\GMCServiceProvider;
 
 class TestCase extends Orchestra
 {

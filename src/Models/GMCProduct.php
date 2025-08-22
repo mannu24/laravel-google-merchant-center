@@ -1,6 +1,6 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Models;
+namespace Mannu24\GoogleMerchantCenter\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;

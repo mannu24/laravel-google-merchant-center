@@ -16,26 +16,26 @@
   ],
   "authors": [
     {
-      "name": "Mannu24",
-      "email": "contact@example.com",
+      "name": "Manu Kumar",
+      "email": "mannukumarshah@gmail.com",
       "role": "Developer"
     }
   ],
-  "homepage": "https://github.com/mannu24/google-merchant-center",
+  "homepage": "https://github.com/mannu24/laravel-google-merchant-center",
   "support": {
-    "issues": "https://github.com/mannu24/google-merchant-center/issues",
-    "source": "https://github.com/mannu24/google-merchant-center"
+    "issues": "https://github.com/mannu24/laravel-google-merchant-center/issues",
+    "source": "https://github.com/mannu24/laravel-google-merchant-center"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Mannu24\\GMCIntegration\\": "src/"
+      "Mannu24\\GoogleMerchantCenter\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mannu24\\GMCIntegration\\Tests\\": "tests/"
+      "Mannu24\\GoogleMerchantCenter\\Tests\\": "tests/"
     }
   },
   "require": {
@@ -52,7 +52,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Mannu24\\GMCIntegration\\Providers\\GMCServiceProvider"
+        "Mannu24\\GoogleMerchantCenter\\Providers\\GoogleMerchantCenterServiceProvider"
       ]
     }
   },

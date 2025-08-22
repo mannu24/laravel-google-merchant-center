@@ -1,10 +1,10 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Traits;
+namespace Mannu24\GoogleMerchantCenter\Traits;
 
-use Mannu24\GMCIntegration\Services\GMCService;
-use Mannu24\GMCIntegration\Models\GMCProduct;
-use Mannu24\GMCIntegration\Models\GMCSyncLog;
+use Mannu24\GoogleMerchantCenter\Services\GMCService;
+use Mannu24\GoogleMerchantCenter\Models\GMCProduct;
+use Mannu24\GoogleMerchantCenter\Models\GMCSyncLog;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Config;
 

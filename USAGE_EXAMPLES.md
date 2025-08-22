@@ -8,7 +8,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Manu\GMCIntegration\Traits\SyncsWithGMC;
+use Mannu24\GoogleMerchantCenter\Traits\SyncsWithGMC;
 
 class Product extends Model
 {
@@ -154,7 +154,7 @@ class Product extends Model
 
 ```php
 $product = Product::find(1);
-$result = $product->syncwithgmc();
+$result = $product->syncToGMC();
 
 $product->syncToGMC();
 $product->forceSyncToGMC();
@@ -207,7 +207,7 @@ class Product extends Model
 ## Bulk Operations
 
 ```php
-use Manu\GMCIntegration\Services\GMCService;
+use Mannu24\GoogleMerchantCenter\Services\GMCService;
 
 $gmcService = app(GMCService::class);
 $products = Product::where('status', 'active')->get();
@@ -312,14 +312,14 @@ public function prepareGMCData(): array
 ### Error Handling
 ```php
 try {
-    $product->syncwithgmc();
+    $product->syncToGMC();
     return response()->json(['message' => 'Product synced successfully']);
 } catch (\Exception $e) {
     Log::error('GMC Sync failed: ' . $e->getMessage());
     return response()->json(['error' => 'Sync failed'], 500);
 }
 
-$success = $product->syncwithgmc();
+    $success = $product->syncToGMC();
 if ($success) {
     // Handle success
 } else {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Repositories\Interfaces;
+namespace Mannu24\GoogleMerchantCenter\Repositories\Interfaces;
 
 interface GMCRepositoryInterface
 {

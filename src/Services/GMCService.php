@@ -1,8 +1,8 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Services;
+namespace Mannu24\GoogleMerchantCenter\Services;
 
-use Mannu24\GMCIntegration\Repositories\Interfaces\GMCRepositoryInterface;
+use Mannu24\GoogleMerchantCenter\Repositories\Interfaces\GMCRepositoryInterface;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Config;

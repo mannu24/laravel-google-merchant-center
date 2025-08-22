@@ -1,9 +1,9 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Tests\Unit;
+namespace Mannu24\GoogleMerchantCenter\Tests\Unit;
 
-use Mannu24\GMCIntegration\Tests\TestCase;
-use Mannu24\GMCIntegration\Services\GMCService;
+use Mannu24\GoogleMerchantCenter\Tests\TestCase;
+use Mannu24\GoogleMerchantCenter\Services\GMCService;
 
 class GMCServiceTest extends TestCase
 {

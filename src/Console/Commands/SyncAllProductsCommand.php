@@ -1,6 +1,6 @@
 <?php
 
-namespace Mannu24\GMCIntegration\Console\Commands;
+namespace Mannu24\GoogleMerchantCenter\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
@@ -34,12 +34,12 @@ class SyncAllProductsCommand extends Command
 
         $model = new $modelClass;
         
-        if (!in_array(SyncsWithGMC::class, class_uses_recursive($model))) {
+        if (!in_array(\Mannu24\GoogleMerchantCenter\Traits\SyncsWithGMC::class, class_uses_recursive($model))) {
             $this->error("Model {$modelClass} must use SyncsWithGMC trait");
             return 1;
         }
 
-        $gmcService = app(GMCService::class);
+        $gmcService = app(\Mannu24\GoogleMerchantCenter\Services\GMCService::class);
         $chunkSize = (int) $this->option('chunk');
         $force = $this->option('force');
         $dryRun = $this->option('dry-run');
